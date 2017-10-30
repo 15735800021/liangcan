@@ -17,3 +17,9 @@ $("#share").mouseover(function(){
 $(".n").mouseleave(function(){
     $(".share1").slideUp(500);
 });
+$("#n-store1").mouseover(function(){
+    $(".n-store").slideDown();
+});
+$(".n").mouseleave(function(){
+    $(".n-store").slideUp(500);
+});

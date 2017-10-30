@@ -180,21 +180,48 @@ nav ul>a:hover>li{
     position:relative;
     left:267px;
 }
-.journal,.share1{
+.journal,.share1,.n-store{
     position:absolute;
     width:100%;
-    height:200px;
     left:0;
     top:106px;
     border-bottom:1px solid rgb(233, 231, 231);
     display:none;
     background:white;
 }
-.journal li,.share1 li{
+.journal li,.share1 li ,.n-store li{
     float:left;
     margin-right:60px;
     color: #666;
     font-size: 12px;
     line-height: 32px;
     margin-top:20px;
+}
+.n-first{
+    width: 232px;
+    height: 232px;
+    margin-top:30px;
+    margin-right:273px;
+    float:right;
+    position:relative;
+}
+.n-store h6{
+    margin:280px 0 0 1030px;
+    position:absolute;
+    color: #4d4d4d;
+    font-size: 14px;
+    font-weight:400;
+}
+.n-store ol li{
+    text-align:center;
+    margin-top:50px;
+    font-weight:800;
+}
+.n-store ol li img{
+    width:40px;
+    height:40px;
+}
+.n-store ol li p{
+    margin-top:-20px;
+    color: #4d4d4d;
 }
