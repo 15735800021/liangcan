@@ -25,7 +25,7 @@ header{
     height:38px;
     background:url("images/1.png");
 }
-#area a div:hover{
+header #area a div:hover{
     opacity:0.8;
 }
 header ul{
@@ -78,6 +78,7 @@ header ul>li>a>div{
     margin:69px 0 0 -106px;
     line-height:50px;
     color:#fff;
+    z-index:5;
 }
 .shopping:hover{
     background:#292f34;
@@ -100,7 +101,7 @@ header ol li{
     line-height:44px;
     display:none;
     position:relative;
-    z-index:7;
+    z-index:5;
 }
 header ol li:hover{
     background:#2e353d;
@@ -121,7 +122,7 @@ header ol li span{
 nav ul{
     height:49px;
 }
-nav ul li{
+nav ul>a>li{
     float:left;
     width:144px;
     border-bottom: #ededed solid 4px;
@@ -129,7 +130,7 @@ nav ul li{
     color:black;
     text-align:center;
 }
-nav ul li:hover{
+nav ul>a:hover>li{
     border-bottom: black solid 4px;
 }
 .search{
@@ -138,7 +139,7 @@ nav ul li:hover{
     float:right;
     border-bottom: #ededed solid 4px;
     margin-right:-267px;
-    overflow:hidden;
+    position:relative;
 }
 .search>a>div{
     width:33px;
@@ -148,6 +149,8 @@ nav ul li:hover{
     margin-left:220px;
     line-height:40px;
     position:absolute;
+    z-index:4;
+    cursor:pointer;
 }
 .search input{
     margin-top:14px;
@@ -156,6 +159,7 @@ nav ul li:hover{
     background:#fff;
     outline:none;
     position:relative;
+    margin-left:10px;
 }
 /* js改right值 */
 .search2{
@@ -163,8 +167,34 @@ nav ul li:hover{
     height:45.5px;
     float:right;
     border-bottom: #ededed solid 4px;
-    margin-right:-267px;
     border-bottom: black solid 4px;
     overflow:hidden;
-    right:500px;
+    position:relative;
+    left:267px;
+}
+.hide{
+    width:268px;
+    height:45.5px;
+    background:white;
+    border-bottom: white solid 4px;
+    position:relative;
+    left:267px;
+}
+.journal,.share1{
+    position:absolute;
+    width:100%;
+    height:200px;
+    left:0;
+    top:106px;
+    border-bottom:1px solid rgb(233, 231, 231);
+    display:none;
+    background:white;
+}
+.journal li,.share1 li{
+    float:left;
+    margin-right:60px;
+    color: #666;
+    font-size: 12px;
+    line-height: 32px;
+    margin-top:20px;
 }
