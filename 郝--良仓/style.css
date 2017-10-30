@@ -256,6 +256,7 @@ footer{
 footer p{
     color:black;
     margin-top:30px;
+    position:relative;
 }
 footer p a{
     color:black;
@@ -265,7 +266,7 @@ footer p i{
     display:block;
     width:27px;
     height:15px;
-    left:630px;
+    left:350px;
     margin-top:5px;
     position:absolute;
     background: url("images/1.png")-173px -356px no-repeat;

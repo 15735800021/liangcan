@@ -30,10 +30,10 @@ $(".n").mouseleave(function(){
     $(".n-store").slideUp();
 });
 $("footer p a").mouseover(function(){
-    $("footer p a i").animate({"left":610},500);
+    $("footer p a i").animate({"left":320},500);
 })
 $("footer p").mouseover(function(){
-    $("footer p a i").animate({"left":630},500);
+    $("footer p a i").animate({"left":350},500);
 })
 $(window).scroll(function(){
     var top = $(document).scrollTop();
