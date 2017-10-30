@@ -9,17 +9,17 @@ $("#journals").mouseover(function(){
     $(".journal").slideDown();
 });
 $(".n").mouseleave(function(){
-    $(".journal").slideUp(500);
+    $(".journal").slideUp();
 });
 $("#share").mouseover(function(){
     $(".share1").slideDown();
 });
 $(".n").mouseleave(function(){
-    $(".share1").slideUp(500);
+    $(".share1").slideUp();
 });
 $("#n-store1").mouseover(function(){
     $(".n-store").slideDown();
 });
 $(".n").mouseleave(function(){
-    $(".n-store").slideUp(500);
+    $(".n-store").slideUp();
 });
