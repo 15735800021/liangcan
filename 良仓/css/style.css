@@ -1,0 +1,257 @@
+*{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+header{
+    width:100%;
+    height:47px;
+    background:#25292e;
+    min-width:1000px;
+    line-height: 56px;
+    padding-top:9px;
+}
+#area{
+    width:1000px;
+    margin:0 auto;
+}
+#area .logo{
+    width:95px;
+    height:38px;
+    background:url("images/1.png");
+}
+header #area a div:hover{
+    opacity:0.8;
+}
+header ul{
+    position:relative;
+    float:right;
+    margin-top:-8px;
+    line-height:56px;
+    height:56px;
+}
+header ul>li{
+    margin-top:0;
+    font-size:12px;
+    float:left;
+    color:#666;
+    cursor:pointer;
+    height:56px;
+}
+header ul>li>a{
+    color:#666;
+    padding:0 15px;
+    border-left:1px solid #666;
+}
+.white{
+    padding:0 10px 0 5px;
+    color:#ccc;
+    border:none;
+}
+header ul>li:hover a{
+    color:#ccc;
+}
+header ul>li div{
+    text-align:center;
+    color:#ccc;
+}
+header ul>li>div{
+    position:absolute;
+    width:100%;
+    height:70px;
+    background:#292f34;
+    margin:-1px 0 0 -90px;
+    line-height:70px;
+    display:none;
+    z-index:5;
+}
+header ul>li>a>div{
+    width:100%;
+    height:50px;
+    background:#7dbfde;
+    position:absolute;
+    margin:69px 0 0 -106px;
+    line-height:50px;
+    color:#fff;
+    z-index:5;
+}
+.shopping:hover{
+    background:#292f34;
+}
+.shopping:hover div{
+    display:block;
+}
+.shopping:hover .k{
+    display:block !important;
+}
+.news:hover{
+    background:#292f34;
+}
+header ol li{
+    width:150px;
+    height:44px;
+    background:#292f34;
+    margin:-1px 0 0 -60px;
+    padding:0 20px;
+    line-height:44px;
+    display:none;
+    position:relative;
+    z-index:5;
+}
+header ol li:hover{
+    background:#2e353d;
+}
+.news:hover ol li{
+    display:block;
+}
+header ol li p{
+    border-top:1px solid #3f4449;
+    position:relative;
+    color:#ccc;
+}
+header ol li span{
+    position:absolute;
+    right:0;
+    color:#ccc;
+}
+nav ul{
+    height:49px;
+}
+nav ul>a>li{
+    float:left;
+    width:144px;
+    border-bottom: #ededed solid 4px;
+    line-height:46px;
+    color:black;
+    text-align:center;
+}
+nav ul>a:hover>li{
+    border-bottom: black solid 4px;
+}
+.search{
+    width:268px;
+    height:45.5px;
+    float:right;
+    border-bottom: #ededed solid 4px;
+    margin-right:-267px;
+    position:relative;
+}
+.search>a>div{
+    width:33px;
+    height:40px;
+    background:url("images/1.png")-167px -145px;
+    float:right;
+    margin-left:220px;
+    line-height:40px;
+    position:absolute;
+    z-index:4;
+    cursor:pointer;
+}
+.search input{
+    margin-top:14px;
+    border:none;
+    width:200px;
+    background:#fff;
+    outline:none;
+    position:relative;
+    margin-left:10px;
+}
+/* js改right值 */
+.search2{
+    width:268px;
+    height:45.5px;
+    float:right;
+    border-bottom: #ededed solid 4px;
+    border-bottom: black solid 4px;
+    overflow:hidden;
+    position:relative;
+    left:267px;
+}
+.hide{
+    width:268px;
+    height:45.5px;
+    background:white;
+    border-bottom: white solid 4px;
+    position:relative;
+    left:267px;
+}
+.journal,.share1,.n-store{
+    position:absolute;
+    width:100%;
+    left:0;
+    top:106px;
+    border-bottom:1px solid rgb(233, 231, 231);
+    display:none;
+    background:white;
+}
+.journal li,.share1 li ,.n-store li{
+    float:left;
+    margin-right:60px;
+    color: #666;
+    font-size: 12px;
+    line-height: 32px;
+    margin-top:20px;
+}
+.journal a,.share1 a{
+    color: #666;
+}
+.n-store{
+    position:absolute;
+    width:100%;
+    margin-left:50%;
+    left:-50%;
+}
+.n-first{
+    width: 232px;
+    height: 232px;
+    margin-top:30px;
+    float:right;
+    margin-right:13px;
+}
+.n-store h6{
+    margin:280px 0 0 810px;
+    position:absolute;
+    color: #4d4d4d;
+    font-size: 14px;
+    font-weight:400;
+}
+.n-store ol{
+    overflow:hidden;
+}
+.n-store ol li{
+    text-align:center;
+    margin-top:50px;
+    font-weight:800;
+}
+.n-store ol li img{
+    width:40px;
+    height:40px;
+}
+.n-store ol li p{
+    margin-top:-20px;
+    color: #4d4d4d;
+}
+.n-store>ol>p{
+    position:relative;
+    margin-top:400px;
+    height:100px;
+    color:#666;
+}
+.n-store p span{
+    margin-left:20px;
+}
+footer{
+    width:100%;
+    height:170px;
+    background: #fbfdfe;
+    overflow:hidden;
+    text-align:center;
+}
+footer p{
+    margin-top:30px;
+}
