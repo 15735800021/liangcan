@@ -188,6 +188,7 @@ nav ul>a:hover>li{
     border-bottom:1px solid rgb(233, 231, 231);
     display:none;
     background:white;
+    z-index:9;
 }
 .journal li,.share1 li ,.n-store li{
     float:left;
@@ -247,11 +248,185 @@ nav ul>a:hover>li{
 }
 footer{
     width:100%;
-    height:170px;
+    height:200px;
     background: #fbfdfe;
     overflow:hidden;
     text-align:center;
 }
 footer p{
+    color:black;
     margin-top:30px;
+}
+footer p a{
+    color:black;
+    font-weight:500;
+}
+footer p i{
+    display:block;
+    width:27px;
+    height:15px;
+    left:630px;
+    margin-top:5px;
+    position:absolute;
+    background: url("images/1.png")-173px -356px no-repeat;
+}
+footer ul{
+    margin-top:50px;
+}
+footer ul li div{
+    width:55px;
+    height:60px;
+}
+footer ul li{
+    width:250px;
+    float:left;
+    text-align:left;
+}
+footer ul li span{
+    position:absolute;
+    margin-top:-55px;
+    margin-left:65px;
+}
+footer ul li span a{
+    font-size:14px;
+    color:#ccc;
+}
+.f-b{
+    width:100%;
+    height:223px;
+    background:#25292e;
+    overflow:hidden;
+}
+.f-b>div>div{
+    cursor:pointer;
+}
+.f-b>div>div:hover{
+    color:rgb(185, 185, 185);
+}
+.f-b>div>div:hover div{
+    display:block;
+}
+.f-b>div>div{
+    color: #5c5c5c;
+    margin-top:30px;
+    width:196px;
+    height:44px;
+    padding:0 0 0 60px;
+    background:url("images/1.png") -175px 0 no-repeat;
+}
+.f-b>div>div>div{
+    width:210px;
+    height:150px;
+    position:absolute;
+    color:black;
+    background:white;
+    margin:-222px 0 0 -63px;
+    font-size: 13px;
+    display:none;
+}
+.ip{
+    display:block;
+    width:99px;
+    height:108px;
+    float:right;
+    background:url("images/1.png")0 -48px no-repeat;
+}
+.ad{
+    display:block;
+    width:99px;
+    height:108px;
+    background:url("images/1.png")-100px -48px no-repeat;
+}
+.f-b>div>ul{
+    float:right;
+    width:133px;
+    height:20px;
+    margin-top:-30px;
+}
+.f-b>div>ul>li{
+    width:25px;
+    height:20px;
+    float:left;
+    margin-right:20px;
+    cursor:pointer;
+}
+.wx{
+    background:url("images/1.png")-100px 0 no-repeat;
+}
+.wx:hover{
+    background:url("images/1.png")-100px -24px no-repeat;
+}
+.sh{
+    background:url("images/1.png")-150px 0 no-repeat;
+}
+.sh:hover{
+    background:url("images/1.png")-150px -24px no-repeat;
+}
+.do{
+    width:21px !important;
+    background:url("images/1.png")-129px 0 no-repeat;
+}
+.do:hover{
+    width:21px !important;
+    background:url("images/1.png")-129px -24px no-repeat;
+}
+.wx2{
+    width:145px;
+    height:145px;
+    background:url("images/1.png")0px -148px no-repeat;
+    position:absolute;
+    margin-top:-189px;
+    margin-left:-63px;
+    display:none;
+}
+.wx:hover .wx2{
+    display:block;
+}
+.f-b>div>ol{
+    margin-top:20px;
+}
+.f-b>div>ol>li{
+    float:left;
+    border-right:1px solid #5c5c5c;
+    padding-right:10px;
+    padding-left:10px;
+    line-height:14px;
+    height:14px;
+}
+.f-b>div>ol>li>a{
+    color:#5c5c5c;
+    font-size: 14px;
+}
+.f-b>div>ol>li>a:hover{
+    color:rgb(185, 185, 185);
+}
+.f-b>div>p{
+    color:#5c5c5c;
+    font-size: 14px;
+}
+aside .top{
+    width:59px;
+    height:59px;
+    background:url("images/1.png")-20px -813px no-repeat;
+    position:fixed;
+    top:605px;
+    right:25px;
+    float:right;
+    cursor:pointer;
+}
+aside .top:hover{
+    opacity:0.2;
+}
+aside .service{
+    width:90px;
+    height:30px;
+    background-color: #5b799a;
+    top:700px;
+    right:10px;
+    float:right;
+    border-radius:5px;
+    text-align:center;
+    line-height:30px;
+    color:white;
+    position:fixed;
 }
