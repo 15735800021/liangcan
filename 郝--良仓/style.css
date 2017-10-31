@@ -405,12 +405,15 @@ footer ul li span a{
     color:#5c5c5c;
     font-size: 14px;
 }
+aside{
+    position:relative;
+}
 aside .top{
     width:59px;
     height:59px;
     background:url("images/1.png")-20px -813px no-repeat;
     position:fixed;
-    top:605px;
+    top:555px;
     right:25px;
     float:right;
     cursor:pointer;
@@ -422,7 +425,7 @@ aside .service{
     width:90px;
     height:30px;
     background-color: #5b799a;
-    top:700px;
+    top:650px;
     right:10px;
     float:right;
     border-radius:5px;
