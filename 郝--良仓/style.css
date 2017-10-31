@@ -431,3 +431,182 @@ aside .service{
     color:white;
     position:fixed;
 }
+/* 轮播图 */
+.carousel {
+    position: relative;
+    width: 1000px;
+    height: 510px;
+    margin: 30px auto;
+    overflow: hidden;
+  }
+  .carousel .m_unit {
+    width: 6000px;
+    height: 330px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .carousel ul {
+    list-style: none;
+  }
+  .carousel ul li {
+    float: left;
+    width: 1000px;
+    height: 475px;
+  }
+
+  .btns a {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    margin-top: -20px;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    z-index: 999;
+    display:none;
+  }
+  #carousel:hover .btns a{
+      display:block;
+  }
+  .leftBtn {
+    left: 10px;
+    background:url("images/leftbtn2.png");
+  }
+  .rightBtn {
+    right: 10px;
+    background:url("images/rightbtn2.png");
+  }
+  .leftBtn:hover{
+    background:url("images/leftbtn.png");
+  }
+  .rightBtn:hover{
+    background:url("images/rightbtn.png");
+  }
+  .circles {
+    position: absolute;
+    width: 150px;
+    height: 16px;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -75px;
+  }
+  .circles ol {
+    margin-top:0;
+    list-style: none;
+  }
+  .circles ol li {
+    float: left;
+    width: 20px;
+    height: 4px;
+    cursor: pointer;
+    background: #e8e8e8;
+    margin-right: 6px;
+  }
+  .circles ol li.current {
+    background: #45494d;
+  }
+.s-center{
+    width:100%;
+    height:403px;
+}
+.s-center-rt{
+    float:right;
+    width:320px;
+}
+.s-center-rt img{
+    width:320px;
+    height:191px;
+    margin-bottom:17px;
+}
+.s-center-center{
+    float:right;
+    margin-right:22px;
+}
+.s-center-lt img{
+    width:320px;
+    height:192px;
+    margin-bottom:17px;
+}
+.shoppings{
+    margin-top:50px;
+    text-align:center;
+    width:100%;
+    font-size:14px;
+    color:grey;
+    height:1200px;
+    /* overflow:hidden; */
+    position:relative;
+}
+.shoppings div{
+    position:absolute;
+    bottom:50px;
+    width:148px;
+    height:50px;
+    left:50%;
+    margin-left:-74px;
+    font-weight:800;
+    line-height:50px;
+    background:url("images/1.png")0 -640px;
+}
+.shoppings>a>div:hover{
+    background:url("images/1.png")0 -690px;
+}
+.shoppings ul{
+    margin-top:20px;
+    background:red;
+    text-align:center;
+}
+.shoppings ul li{
+    width:316px;
+    height:316px;
+    float:left;
+    margin-top:10px;
+    margin-left:26px;
+    background-size:100%;
+}
+.shoppings ul li div{
+    margin:50px 0 0 -160px;
+    width:316px;
+    height:316px;
+    position:relative;
+    background:url("images/shadow_blk1.png");
+    display:none;
+    text-align:center;
+    line-height:316px;
+    color:white;
+    white-space: nowrap;
+    overflow:hidden;
+}
+.shoppings ul li:hover div{
+    display:block;
+}
+.shoppings ul li div i{
+    color:skyblue;
+    font-size:20px;
+    top:-120px;
+    left:20px;
+    position:absolute;
+}
+.shoppings ul li div h3{
+    position:relative;
+    width:200px;
+    left:50%;
+    margin-left:-100px;
+    text-align:center;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.shoppings ul li div p{
+    font-size:14px;
+    width:300px;
+    left:50%;
+    position:absolute;
+    margin-left:-150px;
+    font-weight:200;
+    margin-top:-280px;
+    word-break:break-all; 
+}
