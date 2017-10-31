@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/例子.css" />
+	</head>
+	<body>
+		<div id="list">
+			<ul>
+				<li>
+					<a href="" class="userimg"><img src="img/893851309.jpg" /></a>
+					<div class="top">
+						
+						<span class="address">滇仓网DC</span>
+						<span class="like">35</span>
+					</div>
+					<div class="bottom">
+						<img src="img/60.jpg"  />
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+<script>
+
+// 分类数据
+//*
+// 请求url地址
+var url = "http://h6.duchengjiu.top/shop/api_goods.php";
+$.get(url, function(obj) {
+	// 返回的结果 是 对象
+	// 数组
+	var arr = obj.data;
+	var h = ""
+	// 0 ~ 最后一个
+	for (var i = 0; i < arr.length; i++)
+	{
+		// 取出对象
+		var item = arr[i]
+		h += item.goods_thumb;		
+	}
+
+	$(".user").html(h);
+})
+//*/
+
+</script>
+</html>
