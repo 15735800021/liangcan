@@ -15,6 +15,9 @@ header{
     min-width:1000px;
     line-height: 56px;
     padding-top:9px;
+    position:fixed;
+    top:0;
+    z-index:6;
 }
 #area{
     width:1000px;
@@ -119,6 +122,12 @@ header ol li span{
     right:0;
     color:#ccc;
 }
+nav{
+    width:100%;
+    position:fixed;
+    z-index:5;
+    background:white;
+}
 nav ul{
     height:49px;
 }
@@ -134,12 +143,12 @@ nav ul>a:hover>li{
     border-bottom: black solid 4px;
 }
 .search{
-    width:268px;
+    width:280px;
     height:45.5px;
     float:right;
     border-bottom: #ededed solid 4px;
-    margin-right:-267px;
     position:relative;
+    right:0px;
 }
 .search>a>div{
     width:33px;
@@ -163,14 +172,14 @@ nav ul>a:hover>li{
 }
 /* js改right值 */
 .search2{
-    width:268px;
+    width:280px;
     height:45.5px;
     float:right;
     border-bottom: #ededed solid 4px;
     border-bottom: black solid 4px;
     overflow:hidden;
     position:relative;
-    left:267px;
+    left:281px;
 }
 .hide{
     width:268px;
@@ -178,13 +187,13 @@ nav ul>a:hover>li{
     background:white;
     border-bottom: white solid 4px;
     position:relative;
-    left:267px;
+    left:281px;
 }
 .journal,.share1,.n-store{
     position:absolute;
     width:100%;
     left:0;
-    top:106px;
+    top:49px;
     border-bottom:1px solid rgb(233, 231, 231);
     display:none;
     background:white;
@@ -430,6 +439,9 @@ aside .service{
     line-height:30px;
     color:white;
     position:fixed;
+}
+section{
+    padding-top:100px;
 }
 /* 轮播图 */
 .carousel {

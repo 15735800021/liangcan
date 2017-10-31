@@ -1,8 +1,8 @@
 $(".search>a>div").click(function(){ 
-    if($(".search2").css("left")=="267px"){
+    if($(".search2").css("left")=="281px"){
         $(".search2").animate({"left":0});
     }else{
-        $(".search2").animate({"left":267});
+        $(".search2").animate({"left":281});
     }
 });
 $("#journals").mouseover(function(){
@@ -39,7 +39,11 @@ $(window).scroll(function(){
     var top = $(document).scrollTop();
     if(top > 100){
         $(".top").show();
+        $("header").slideUp(300);
+        $("nav").animate({"top":0},0);
     }else{
+        $("header").slideDown(300);
+        $("nav").animate({"top":56},0);
         $(".top").hide();
     }
 });
