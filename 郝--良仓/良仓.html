@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="en" style="width:100%;">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        section{
+            display:block;
+            margin:8px;
+        }
+        #shopping{
+            width:1000px;
+            height:417px;
+            margin:0 auto;
+        }
+        #shopping-1{
+            width:1000px;
+            height:92px;
+            color:#333;
+            font-size: 14px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        #shopping-1 .item{display:inline-block;margin-top: 40px;}
+        #shopping-1 span{display: inline-block;width:135px;height:35px;}
+        #shopping-2{width:1000px;height:53px;border-bottom: 2px solid gray;font-size: 15px;padding-top: 15px;}
+        #shopping-3{
+            width:1000px;
+            height:102px;
+        }
+        #shopping-3 span{display: inline;font-size: 20px;color:#197bc9;}
+        #shopping-3 .button{
+            display:inline-block;
+            width:168px;
+            height:30px;
+            color:#ffffff;
+            line-height: 30px;
+            vertical-align: middle;
+            text-align: center;
+            background: #7fa6c5;
+            margin-top: 5px;
+            border:none;
+        }
+
+        fieldset{
+            border:1px solid #ccc;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            font-size: 14px;
+            color:#404040;
+            width:60px;
+            padding:0 54px;
+            display:inline-block;
+            margin-top: 15px;
+        }
+        #shopping-3 fieldset a{
+            color:black;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -47,7 +103,7 @@
         		<a href=""><li>首页</li></a>
                 <a href="" id="n-store1" class="n">
                     <li>商店</li>
-                    <div class="n-store animates" > 
+                    <div class="n-store" > 
                         <ol id="area">
                             <img src="images/goods0.jpg" class="n-first">
                             <h6>新视线：2015年7月刊</h6>
@@ -76,7 +132,7 @@
                 </a>
                 <a href="" id="journals" class="n">
                     <li>杂志</li>
-                    <div class="journal animates">
+                    <div class="journal">
                       <ol id="area">
                         <li>趣物</li>
                         <li>数码</li>
@@ -95,7 +151,7 @@
                 </a>
                 <a href="" id="share"  class="n">
                     <li>分享</li>
-                    <div class="share1 animates">
+                    <div class="share1">
                       <ol id="area">
                         <li>男士</li>
                         <li>家居</li>
@@ -116,83 +172,45 @@
 		   </ul> 
         </div> 
     </nav>
-    <section>
-        <div id="area">
-            <div id="carousel" class="carousel">
-                <div id="m_unit" class="m_unit">
-                    <ul>
-                      <li><a href=""><img src="images/0.jpg" alt=""></a></li>
-                      <li><a href=""><img src="images/1.jpg" alt=""></a></li>
-                      <li><a href=""><img src="images/2.jpg" alt=""></a></li>
-                      <li><a href=""><img src="images/3.jpg" alt=""></a></li>
-                      <li><a href=""><img src="images/4.jpg" alt=""></a></li>
-                      <li><a href=""><img src="images/0.jpg" alt=""></a></li>
-                    </ul>
+    <section rlt="1">
+        <div id="shopping">
+            <div id="shopping-1">
+
+                <div class="item">|<span class="txt" style="color:#6393b4">购物车</span>|</div>
+                <div class="item"><span class="txt">付款</span>|</div>
+
+                <div id="shopping-2">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <th width="100"><input type="checkbox"style="margin-left: 12px;">全选</th>
+                            <th width="300">良品</th>
+                            <th width="120">数量</th>
+                            <th width="160">单价（元）</th>
+                            <th width="160">小计（元）</th>
+                            <th>操作</th>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="btns">
-                    <a href="javascript:" class="leftBtn" id="leftBtn"></a>
-                    <a href="javascript:" class="rightBtn" id="rightBtn"></a>
+                <div id="shopping-3">
+                    <p>良品总价<font style="font-size: 18px;">/&nbsp;&nbsp;</font><span>¥<font>0.00</font></span></p>
+                    <p><input class="button" type="button" value="立即结算"></p>
+
+                    <fieldset>
+                        <legend>
+                            <a href="#">继续购物</a>
+                        </legend>
+                    </fieldset>
                 </div>
-                <div class="circles" id="circles">
-                    <ol>
-                      <li class="current"></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ol>
-                </div>
-            </div>                 
-        </div>
-        </div>
+            </div>
+        </div>    
     </section>
     <footer>
         <div id="area">
-            <p><a href=""><i></i>良仓商店/OUR SHOP</a></p>
-            <ul>
-                <li><div style="background:url(images/1.png)0 -356px no-repeat"></div><span>全球精品<br><a>Global Selections</a></span></li>
-                <li><div style="background:url(images/1.png)-153px -219px no-repeat"></div><span>正品保证<br><a>Authenticity Guaranteed</a></span></li>
-                <li><div style="background:url(images/1.png)-55px -356px no-repeat"></div><span>全场包邮<br><a>Free Delivery</a></span></li>
-                <li><div style="background:url(images/1.png)-114px -356px no-repeat"></div><span>400-897-6336<br><a>工作日 09:00-18:00</a></span></li>
-            </ul>
-        </div>  
-    </footer> 
-    <div class="f-b">
-        <div id="area">
-            <div>iPhone Android<br>客户端下载
-                <div>
-                    <i class="ip"></i>
-                    <i class="ad"></i>下载iPhone版 &nbsp;&nbsp; 下载Android版
-                </div>
-            </div>
-            <ul>
-                <li class="wx">
-                    <div class="wx2"></div>
-                </li>
-                <li class="sh"></li>
-                <li class="do"></li>
-            </ul>
-            <ol>
-                <li style="padding-left:0;"><a href="">关于良仓</a></li>
-                <li><a href="">服务协议</a></li>
-                <li><a href="">隐私保护政策</a></li>
-                <li><a href="">使用指南</a></li>
-                <li><a href="">联系我们</a></li>
-                <li><a href="">加入我们</a></li>
-                <li><a href="">友情链接</a></li>
-                <li style="border:none;"><a href="">私信良仓</a></li>
-            </ol><br>
-            <p>© 2013-2015 北京良仓文化传播有限公司版权所有 京ICP备13010677号-1 京公网安备11010502025627</p>
-            <p> 公司名称：北京良仓文化传播有限公司  电话：010-58263516</p>
-            <p>公司地址：北京朝阳区百子湾路32号6号楼1层60号.</p>
-            <p>社会信用统一代码：91110105059231575L  食品许可证：JY11105160159557  </p>
-            <p>图书证名称：中华人民共和国出版物经营许可证  图书证编号：新出发京零 字第 朝 150051 号  </p>
+            <p><a href="">良仓商店/OUR SHOP</a></p>
         </div>
-    </div>
-    <aside>
-        <a href="#top"><div class="top"></div></a>
-        <a href=""><div class="service">联系客服</div></a>
-    </aside>
+    </footer>
     <script src="jq/jquery-3.2.1.js"></script>
     <script src="shouye.js"></script>
 </body>
