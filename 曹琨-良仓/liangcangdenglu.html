@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <style>
+        #box{
+            width:300px;height:586px;margin:0 auto;
+        }
+        #box-top{
+            width:300px;
+            height:319px;
+        }
+        #box-top img{margin-top: 60px;margin-left: 90px;}
+        #box-center-top{
+            width:300px;
+            height:35px;
+            border-bottom: 1px solid black;
+        }
+        #box-center-top input{
+            outline: none;
+            border: none;
+            margin-left: 20px;
+            font-size: 18px;
+            font-family: "Hiragino Sans GB", 冬青黑体, "Hiragino Kaku Gothic ProN", "Microsoft Yahei", Simsun, Arial, Helvetica, sans-serif;
+        }
+        #box-center-top img{
+            vertical-align: middle;
+        }
+        #box-center-center{
+            width:300px;
+            height:59px;
+        }
+        #box-center-center-left{
+            width:172px;
+            height:57px;
+            float:left;
+            border-bottom:1px solid black;
+            font-size: 18px;
+        }
+        #box-center-center-left input {
+            width: 132px;
+            height:35px;
+            margin-left: 20px;
+            margin-top: 16px;
+            font-size: 18px;
+            font-family: "Hiragino Sans GB", 冬青黑体, "Hiragino Kaku Gothic ProN", "Microsoft Yahei", Simsun, Arial, Helvetica, sans-serif;
+            outline: none;
+            border: none;
+        }
+        #box-center-center-right{
+            width:110px;
+            height:35px;
+            border:1px solid black;
+            float: right;
+            border-radius: 4px;
+            color:#333;
+            cursor:pointer;
+            line-height: 34px;
+            font-size: 16px;
+            margin-top: 16px;
+            text-align: center;
+        }
+        #box-bottom{
+            width:300px;
+            height:24px;
+            padding-top: 22px;
+        }
+        #box-bottom-bottom{
+            width:300px;
+            height:90px;
+        }
+        #box-bottom-bottom input{
+            width:300px;
+            height:50px;
+            border: 0;
+            background: #25292e;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-top: 9px;
+            margin-bottom: 30px;
+            font-family: "Hiragino Sans GB", 冬青黑体, "Hiragino Kaku Gothic ProN", "Microsoft Yahei", Simsun, Arial, Helvetica, sans-serif;
+            cursor:pointer;
+        }
+
+        #box-title{
+            width:300px;
+            height:21px;
+            text-align: center;
+        }
+        #box-title a{text-decoration: none;color:black;
+        font-size: 15px;}
+    </style>
+    <script src="jquery-3.2.1.js"></script>
+</head>
+<body>
+    <div id="box">
+        <div id="box-top">
+            <a href="#"><img src="image/nlicon.png"/></a>
+        </div>
+        <div id="box-center-top">
+            <span><img src="image/nlphone.png"/></span><input id="mobile" value placeholder="输入手机号" style="width:250px;height:28px;">
+        </div>
+        <div id="box-center-center">
+            <div id="box-center-center-left">
+                <span><img src="image/nlcode.png"/></span><input value placeholder="输入验证码"/>
+            </div>
+            <div id="box-center-center-right">获取验证码</div>
+        </div>
+        <div id="box-bottom">
+            <input type="checkbox" name="isauto" value="1" checked="checked" style="vertical-align:middle;"><span style="vertical-align:middle;">自动登录</span>
+        </div>
+
+        <div id="box-bottom-bottom">
+            <input type="submit" value="登录" style="border-radius: 4px;font-weight: normal">
+        </div>
+        <div id="box-title">
+            <a href="#">更多登录方式 ></a>
+        </div>
+    </div>
+</body>
+<script>
+    var url="http://h6.duchengjiu.top/shop/api_user.php";
+    var data={
+        status:"Login",
+        username:"123456789",
+        password:"123456"
+    };
+    $.post(url,data,function(obj){
+        console.log(obj);
+        if(obj.code==0){
+            $("username").html(data.username)
+        }
+    })
+</script>
+</html>
