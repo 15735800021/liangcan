@@ -10,15 +10,17 @@ $(function  () {
 	//验证用户名
 	oUsername.blur(function () {
 	    username = oUsername.val();
-	    console.log(username);
+//	    console.log(username);
 	    var url = "http://h6.duchengjiu.top/shop/api_user.php"
 	    var data = {
 	    	"status": "check",
 	        "username": username
 	    }
 	    $.post(url, data, function(obj) {
+	    	 console.log(obj.data)
 	        if(obj.code === 0){
 	            oSpan.html("用户名可用");
+	           
 	        }else if(obj.code === 2001){
 	            oSpan.html("用户名已存在");
 	        }
@@ -136,7 +138,7 @@ $(function  () {
 			    console.log(obj);
 			    if(obj.code === 0){
 			        alert("注册成功");
-			        location.href = "index.html";
+			        location.href = "login.html";
 			    }else if(obj.code === 2001){
 			        alert("用户名已存在")
 			    }else{
