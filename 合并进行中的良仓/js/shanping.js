@@ -33,6 +33,11 @@ $.ajax({
                     window.open("lc-xiangqing.html?"+a[i].goods_id);
                 })
             }) 
-         
     }
+})
+$(".shopping_cart").click(function(){
+    window.open("gowuche.html?"+r);
+})
+$(".buynow").click(function(){
+    window.open("gowuche.html?"+r);
 })
