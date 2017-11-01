@@ -26,7 +26,7 @@ header{
 #area .logo{
     width:95px;
     height:38px;
-    background:url("../images/1.png");
+    background:url("images/1.png");
 }
 header #area a div:hover{
     opacity:0.8;
@@ -154,7 +154,7 @@ nav ul>a:hover>li{
 .search>a>div{
     width:33px;
     height:40px;
-    background:url("../images/1.png")-167px -145px;
+    background:url("images/1.png")-167px -145px;
     float:right;
     margin-left:220px;
     line-height:40px;
@@ -279,7 +279,7 @@ footer p i{
     left:350px;
     margin-top:5px;
     position:absolute;
-    background: url("../images/1.png")-173px -356px no-repeat;
+    background: url("images/1.png")-173px -356px no-repeat;
 }
 footer ul{
     margin-top:50px;
@@ -323,7 +323,7 @@ footer ul li span a{
     width:196px;
     height:44px;
     padding:0 0 0 60px;
-    background:url("../images/1.png") -175px 0 no-repeat;
+    background:url("images/1.png") -175px 0 no-repeat;
 }
 .f-b>div>div>div{
     width:210px;
@@ -340,13 +340,13 @@ footer ul li span a{
     width:99px;
     height:108px;
     float:right;
-    background:url("../images/1.png")0 -48px no-repeat;
+    background:url("images/1.png")0 -48px no-repeat;
 }
 .ad{
     display:block;
     width:99px;
     height:108px;
-    background:url("../images/1.png")-100px -48px no-repeat;
+    background:url("images/1.png")-100px -48px no-repeat;
 }
 .f-b>div>ul{
     float:right;
@@ -362,29 +362,29 @@ footer ul li span a{
     cursor:pointer;
 }
 .wx{
-    background:url("../images/1.png")-100px 0 no-repeat;
+    background:url("images/1.png")-100px 0 no-repeat;
 }
 .wx:hover{
-    background:url("../images/1.png")-100px -24px no-repeat;
+    background:url("images/1.png")-100px -24px no-repeat;
 }
 .sh{
-    background:url("../images/1.png")-150px 0 no-repeat;
+    background:url("images/1.png")-150px 0 no-repeat;
 }
 .sh:hover{
-    background:url("../images/1.png")-150px -24px no-repeat;
+    background:url("images/1.png")-150px -24px no-repeat;
 }
 .do{
     width:21px !important;
-    background:url("../images/1.png")-129px 0 no-repeat;
+    background:url("images/1.png")-129px 0 no-repeat;
 }
 .do:hover{
     width:21px !important;
-    background:url("../images/1.png")-129px -24px no-repeat;
+    background:url("images/1.png")-129px -24px no-repeat;
 }
 .wx2{
     width:145px;
     height:145px;
-    background:url("../images/1.png")0px -148px no-repeat;
+    background:url("images/1.png")0px -148px no-repeat;
     position:absolute;
     margin-top:-189px;
     margin-left:-63px;
@@ -418,7 +418,7 @@ footer ul li span a{
 aside .top{
     width:59px;
     height:59px;
-    background:url("../images/1.png")-20px -813px no-repeat;
+    background:url("images/1.png")-20px -813px no-repeat;
     position:fixed;
     bottom:70px;
     right:25px;
@@ -487,17 +487,17 @@ section{
   }
   .leftBtn {
     left: 10px;
-    background:url("../images/leftbtn2.png");
+    background:url("images/leftbtn2.png");
   }
   .rightBtn {
     right: 10px;
-    background:url("../images/rightbtn2.png");
+    background:url("images/rightbtn2.png");
   }
   .leftBtn:hover{
-    background:url("../images/leftbtn.png");
+    background:url("images/leftbtn.png");
   }
   .rightBtn:hover{
-    background:url("../images/rightbtn.png");
+    background:url("images/rightbtn.png");
   }
   .circles {
     position: absolute;
@@ -563,10 +563,10 @@ section{
     margin-left:-74px;
     font-weight:800;
     line-height:50px;
-    background:url("../images/1.png")0 -640px;
+    background:url("images/1.png")0 -640px;
 }
 .shoppings>a>div:hover{
-    background:url("../images/1.png")0 -690px;
+    background:url("images/1.png")0 -690px;
 }
 .shoppings ul{
     margin-top:20px;
@@ -580,13 +580,14 @@ section{
     margin-top:10px;
     margin-left:26px;
     background-size:100%;
+    cursor:pointer;
 }
 .shoppings ul li div{
     margin:50px 0 0 -160px;
     width:316px;
     height:316px;
     position:relative;
-    background:url("../images/shadow_blk1.png");
+    background:url("images/shadow_blk1.png");
     display:none;
     text-align:center;
     line-height:316px;
