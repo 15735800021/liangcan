@@ -1,0 +1,277 @@
+#container{
+	width: 1000px;
+	height: auto;
+	margin: auto;
+	padding-top:120px;
+}
+#container .nav{
+	width: 1000px;
+}
+#container .nav a{
+	color: rgb(191, 191, 191);
+	cursor: pointer;
+	line-height: 40px;
+}
+#container .left{
+	width: 700px;
+	float: left;
+/*	border: 1px solid #999;*/
+}
+#container .left .picture{
+	width: 350px;
+	height: 350px;
+	border: 1px solid #000;
+	float: left;
+	margin-right: 40px;
+	margin-top:10px;
+	background-size:100%;
+}
+#container .left .xinxi .like{
+	display: inline-block;
+	width: 40px;
+	height: 13px;
+	color: black;
+	background: url(../images/24747.png) no-repeat;
+	text-align: right;
+	background-size:33% ;
+	line-height: 13px;
+	margin-top: 9px;
+}
+#container .left .xinxi .name{
+	height: 33px;
+	line-height: 33px;
+	font-size: 22px;
+	color: #878787;
+	margin-top: 10px ;
+	font-weight:normal
+}
+#container .left .xinxi .jianjie{
+	height: 54px;
+	line-height: 27px;
+	font-size: 16px;
+	color: #333333;
+	margin-top: 2px;
+}
+#container .left .money{
+	height: 24px;
+}
+#container .left .money p{
+	width: 40px;
+	font-size: 12px;
+	color: #999999;
+	line-height: 26px;
+	float: left;
+}
+#container .left .money h2{
+	font-size: 14px;
+	color: #1083ff;
+	line-height: 24px;
+}
+#container .left .icon{
+	height: 14px;	
+	margin-top: 10px;
+	margin-bottom: 10px
+
+}
+#container .left .icon p{
+	font-size: 11px;
+	height: 14px;
+	color: #999999;
+	text-align: right;
+	margin-right: 5px;
+	float: left;
+	line-height: 14px;
+}
+#container .left .icon .free{
+	margin-left: 30px;
+	width: 52px;   
+	background:url(../images/24690.png) no-repeat;
+	background-size: 12px;	
+}
+#container .left span{
+	font-size: 11px;
+	color: #999999;
+}
+#container .left .icon .shouquan{
+	width: 64px;   
+	background:url(../images/24689.png) no-repeat;
+	background-size: 12px;	
+}
+#container .left .type{
+	height: 50px;
+}
+#container .left .type .type1{
+	width: 53px;
+	height: 26px;
+	outline: none;
+	background: #999;
+	text-align: center;
+}
+#container .left .number input{
+	outline: none;
+    height: 24px;
+	width: 52px;
+	text-align: center;
+    line-height: 52px;
+    color: #000000;
+    font-size: 10px;
+    background: #FFFFFF;
+    border: 1px solid #eeeeee;
+    margin: 0 3px;
+}
+#container .left .number .reduce{
+    width: 11px;
+    height: 11px;
+    border: 1px solid black;
+    appearance: none;
+    font-size: 7px;
+    color: #000000;
+    line-height: 11px;
+    text-align: center;
+    outline: none;
+    background: #FFFFFF;
+}   
+#container .buynow{
+    height: 42px;
+    margin-top: 21px;
+    margin-left: 392px;
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+    font-size: 16px;
+    display: block; 
+}
+#container .chaining{
+	height: 34px;
+	margin-top: 10px;
+}
+#container .chaining a{
+	background: #FFFFFF;
+	border: 1px solid black;
+	height: 30px;
+	width: 150px;
+	cursor: pointer
+}
+#container .chaining a p{
+	line-height: 30px;
+	width: 150px;
+	text-align: center;
+}
+#container .shopping_cart{
+	float: left;
+}
+#container .sharing{
+	float: right;
+	color: black;
+}
+
+#container .shopping_cart p{
+	width: 82px;
+	background-size:16px ;
+}
+
+#container .sharing p{
+	width: 45px;
+	background-size:13px ;
+}
+#container .left .content{
+	width: 100%;
+	font-size: 12px;
+	margin: 40px 0;
+}
+#container .left .format{
+	margin-top: 40px;
+}
+#container .left .press{
+	margin-top: 14px;
+}
+#container .left .headings{
+	width: 92px;
+	height: 21px;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: right;
+	margin: 35px 0 20px 0;
+	 font-weight:normal
+}
+#container .left .heading1{
+	background: url(../images/24830.png)no-repeat;
+	background-size:21px ;
+}
+#container .left .trademark{
+	line-height: 24px;
+}
+#container .left .heading2{
+	background: url(../images/24829.png)no-repeat;
+	background-size:20px ;
+}
+#container .left .paragraph{
+	margin-bottom: 10px;
+}
+#container .left .after_sale{
+	width: 98px;
+	height: 25px;
+	margin: 18px 0 43px 0;
+	font-size: 13px;
+	text-align: center;
+	line-height: 25px;
+	border: 1px solid black;
+	box-shadow: #ccc 1px 0 1px;
+	border-radius: 3px;
+	cursor: pointer;
+	position: relative;
+}
+#container .left .after_box{
+	position: absolute;
+	width: 655px;
+	height: 345px;
+	top: -354px;
+	left: 0;
+	border: 2px solid #CCCCCC;
+	background: #FFFFFF;
+	font-size: 50px;
+	line-height: 345px;
+	color: #000000;
+	display: none;
+}
+#container .left .after_sale:hover .after_box{
+	display: block;
+}
+
+/*右侧*/
+#container .right{
+	float: right;
+	width: 200px;
+}
+#container .right .bodyer_right{
+	width: 200px;
+	float: right;
+	margin:40px 4px 0 0;
+}
+#container .right .guess{
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+#container .right .glad{
+	display: block;
+	width: 200px;
+	height: 294px;
+	margin-bottom: 25px;	
+}
+#container .right .glad>img{
+	margin-top:10px;
+	width: 200px;
+}
+#container .right .likes{
+	margin: 10px 0 8px 0;
+	line-height: 18px;
+	color: black;
+}
+#container .right .the_title{
+	margin-bottom: 8px;
+	color: #CCCCCC;
+}
+#container .right .worth{
+	color: #3193f3;
+}

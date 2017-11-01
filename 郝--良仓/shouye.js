@@ -1,4 +1,4 @@
-$(".search>a>div").click(function(){ 
+﻿$(".search>a>div").click(function(){ 
     if($(".search2").css("left")=="281px"){
         $(".search2").animate({"left":0});
     }else{
@@ -103,12 +103,17 @@ $.ajax({
         var a=str.data;
         for(var i=0;i<a.length-1;i++){
             console.log(str);
-        $(".shoppings ul").append("<a href=''><li></li></a>");
+        $(".shoppings ul").append("<li></li>");
         $(".shoppings ul li").eq(i).css("background-image","url("+a[i].goods_thumb+")");
         if(i%3==0){
             $(".shoppings ul li").eq(i).css("margin-left","0");
         }
-        } 
+        }
+	$(".shoppings ul li").each(function(i){
+            $(this).click(function(){
+                window.open("lc-xiangqing.html?"+a[i].goods_id);
+            })
+        }) 
         $(".shoppings ul li").append("<div></div>");
         $(".shoppings ul li").each(function(i){
             $(this).children("div").append("<i>"+"￥"+a[i].price+"</i>");
