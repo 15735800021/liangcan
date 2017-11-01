@@ -1,0 +1,23 @@
+/*清除默认边框*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/*列表*/
+ li{list-style: none;} 
+ /*去掉下划线*/
+ a{text-decoration: none;}
+ 
+ b{font-weight: 100;}
+  input{outline:none;}
+  button{outline:none;}
+body{
+	 font:normal 12px/1.6em "microsoft yahei",tahoma,simsun;
+}
+
+/*html,body{
+	height: 100%;
+	width: 100%;
+}*/
+
+

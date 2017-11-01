@@ -1,0 +1,39 @@
+#list{
+	width: 1000px;
+	margin: auto;
+}
+li{
+	width: 306px;
+}
+.userimg{
+	width: 34px;
+    height: 34px;
+    padding: 0px;
+    margin-top:2px;
+    float: left;
+}
+.top{
+	width: 270px;
+    height: 34px;
+    
+    color: #333333;
+    margin-left:32px;
+    background: url(../img/block_bg_gray_266.png) no-repeat;
+}
+.address{
+	color: #878787;
+	line-height: 34px;
+	text-align: left;
+}
+.like{
+	display: inline-block;
+    background: url(../img/xin_black.png) 56px 10px no-repeat;
+    overflow: hidden;
+    width: 45px;
+    height: 26px;
+    padding: 8px 32px 0px 8px;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
