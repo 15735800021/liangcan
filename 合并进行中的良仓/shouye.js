@@ -101,7 +101,7 @@ $.ajax({
     data:data,
     success:function(str){
         var a=str.data;
-        console.log(str);
+        // console.log(str);
         for(var i=0;i<a.length-1;i++){    
         $(".shoppings ul").append("<li></li>");
         $(".shoppings ul li").eq(i).css("background-image","url("+a[i].goods_thumb+")");
