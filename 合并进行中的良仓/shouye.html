@@ -4,91 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>良仓.生活美学平台</title>
+    <link rel="shortcut icon" href="img/favicon.ico" /> 
     <link rel="stylesheet" href="style.css">
-    <style>
-        section{
-            height:1000px;
-        }
-        #shopping{
-            width:1000px;
-            /* height:417px; */
-            margin:0 auto;
-        }
-        #shopping-1{
-            width:1000px;
-            height:92px;
-            color:#333;
-            font-size: 14px;
-            text-align: center;
-            vertical-align: middle;
-        }
-        #shopping-1 div{display:inline-block;margin-top: 26px;}
-        #shopping-1 span{display: inline-block;width:135px;height:35px;}
-
-
-        #shopping-2{width:1000px;border-bottom: 2px solid gray;font-size: 15px;padding-top: 15px;}
-
-        #shopping-3{
-            width:1000px;
-            height:102px;
-        }
-        #shopping-3 span{display: inline;font-size: 20px;color:#197bc9;}
-        #shopping-3 .button{
-            display:inline-block;
-            width:168px;
-            height:30px;
-            color:#ffffff;
-            line-height: 30px;
-            vertical-align: middle;
-            text-align: center;
-            background: #7fa6c5;
-            margin-top: 5px;
-            border:none;
-        }
-
-        fieldset{
-            border:1px solid #ccc;
-            border-bottom: none;
-            border-left: none;
-            border-right: none;
-            font-size: 14px;
-            color:#404040;
-            width:60px;
-            padding:0 54px;
-            display:inline-block;
-            margin-top: 15px;
-        }
-        #shopping-3 fieldset a{
-            color:black;
-            text-decoration: none;
-        }
-        tr{
-            /* height:60px; */
-            width:1000px;
-            padding-top:100px;
-            position:relative;
-            display:block;
-            border-bottom:1px solid black;
-        }
-        tr td a{
-            width:68px;
-            height:68px;
-            background:red;
-            display:block;
-            margin-left:62px;
-            margin-top:-15px;
-        }
-    </style>
 </head>
 <body>
     <header>
         <div id="area">
            <ul>
                <li><a href="" class="white">登陆</a></li>
-               <li><a href="" class="white">注册</a></li>
+               <li><a href="zhuce.html" class="white">注册</a></li>
                <li style="width:67px;" class="shopping">
-                    <a href="">购物车</a>
+                    <a href="gowuche.html">购物车</a>
                     <div>你的购物车暂时没有商品...</div>
                     <a href="" style="display:none;" class="k"><div>快去抢购良仓商品吧！</div></a>
                </li>
@@ -118,7 +45,7 @@
                <div class="hide"></div>
 		   </div>
            <ul>
-        		<a href=""><li>首页</li></a>
+        		<a href="shouye.html"><li>首页</li></a>
                 <a href="" id="n-store1" class="n">
                     <li>商店</li>
                     <div class="n-store animates" > 
@@ -191,47 +118,53 @@
         </div> 
     </nav>
     <section>
-        <div id="shopping">
-            <div id="shopping-1">
-                <div class="item">|<span class="txt" style="color:#6393b4">购物车</span>|</div>
-                <div class="item"><span class="txt">付款</span>|</div>
-                <div id="shopping-2">
-                    <table>
-                        <tbody>
-                        <tr>
-                            <th width="100"><input type="checkbox"style="margin-left: 12px;">全选</th>
-                            <th width="300">良品</th>
-                            <th width="120">数量</th>
-                            <th width="160">单价（元）</th>
-                            <th width="160">小计（元）</th>
-                            <th>操作</th>
-                        </tr>
-                        <tr>
-                            <td width="100" margin-top="50px">
-                                <input type="checkbox"style="margin-left: -20px;">
-                                <a href=""></a>
-                            </td>
-                            <td width="300">2</td>
-                            <td width="120">3</td>
-                            <td width="160">4</td>
-                            <td width="160">5</td>
-                            <td>删除</td>
-                        </tr>
-                        </tbody>
-                    </table>
+        <div id="area">
+            <div id="carousel" class="carousel">
+                <div id="m_unit" class="m_unit">
+                    <ul>
+                      <li><a href=""><img src="images/current1.jpg" alt=""></a></li>
+                      <li><a href=""><img src="images/current2.jpg" alt=""></a></li>
+                      <li><a href=""><img src="images/current3.jpg" alt=""></a></li>
+                      <li><a href=""><img src="images/current4.jpg" alt=""></a></li>
+                      <li><a href=""><img src="images/current5.jpg" alt=""></a></li>
+                      <li><a href=""><img src="images/current1.jpg" alt=""></a></li>
+                    </ul>
                 </div>
-                <div id="shopping-3">
-                    <p>良品总价<font style="font-size: 18px;">/&nbsp;&nbsp;</font><span>¥<font>0.00</font></span></p>
-                    <p><input class="button" type="button" value="立即结算"></p>
-
-                    <fieldset>
-                        <legend>
-                            <a href="#">继续购物</a>
-                        </legend>
-                    </fieldset>
+                <div class="btns">
+                    <a href="javascript:" class="leftBtn" id="leftBtn"></a>
+                    <a href="javascript:" class="rightBtn" id="rightBtn"></a>
+                </div>
+                <div class="circles" id="circles">
+                    <ol>
+                      <li class="current"></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                </div>
+            </div> 
+            <div class="s-center">
+                <div class="s-center-rt">
+                    <a href=""><img src="images/良仓_04.png"></a><a href=""><img src="images/良仓_08.png"></a>
+                </div>
+                <div class="s-center-center">
+                    <a href=""><img src="images/良仓_06.png"></a>
+                </div>
+                <div class="s-center-lt">
+                        <a href=""><img src="images/良仓_12.png"></a><a href=""><img src="images/良仓_13.png"></a>
                 </div>
             </div>
+            <div class="shoppings">
+                人气良品
+                <hr style="width:100%;color:#ccc;margin-top:10px;">
+                <ul>
+                    
+                </ul>
+                <a href=""><div></div></a>
+            </div>                
         </div>
+        
     </section>
     <footer>
         <div id="area">
@@ -282,6 +215,5 @@
     </aside>
     <script src="jq/jquery-3.2.1.js"></script>
     <script src="shouye.js"></script>
-    <script src="js/gowuche.js"></script>
 </body>
 </html>
