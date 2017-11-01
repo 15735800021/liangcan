@@ -100,11 +100,11 @@
             <a href="#"><img src="image/nlicon.png"/></a>
         </div>
         <div id="box-center-top">
-            <span><img src="image/nlphone.png"/></span><input id="mobile" value placeholder="输入手机号" style="width:250px;height:28px;">
+            <span><img src="image/nlphone.png"/></span><input id="mobile" value placeholder="输入用户名" style="width:250px;height:28px;">
         </div>
         <div id="box-center-center">
             <div id="box-center-center-left">
-                <span><img src="image/nlcode.png"/></span><input value placeholder="输入验证码"/>
+                <span><img src="image/nlcode.png"/></span><input id="yz" value placeholder="输入验证码"/>
             </div>
             <div id="box-center-center-right">获取验证码</div>
         </div>
@@ -113,7 +113,7 @@
         </div>
 
         <div id="box-bottom-bottom">
-            <input type="submit" value="登录" style="border-radius: 4px;font-weight: normal">
+            <input id="dl" type="submit" value="登录" style="border-radius: 4px;font-weight: normal">
         </div>
         <div id="box-title">
             <a href="#">更多登录方式 ></a>
@@ -122,16 +122,46 @@
 </body>
 <script>
     var url="http://h6.duchengjiu.top/shop/api_user.php";
+    var username = $("#mobile").val();
+    var password = $("#yz").val();
     var data={
-        status:"Login",
-        username:"123456789",
-        password:"123456"
+        status:"login",
+        username: username,
+        password: password
     };
-    $.post(url,data,function(obj){
-        console.log(obj);
-        if(obj.code==0){
-            $("username").html(data.username)
+    $.post(url, data, function(obj) {
+        if(obj.code === 0){
+            console.log(obj)
+        }else if(obj.code === 2001){
+           alart("用户名已存在");
         }
+    })
+    $("#box-center-center-right").click(function () {
+        alert("7857")
+    })
+    $("#dl").click(function(){
+        var username = $("#mobile").val();
+        var password = $("#yz").val();
+        $.ajax({
+            "url":"http://h6.duchengjiu.top/shop/api_user.php",
+            "type": "POST",
+            "data":{
+                "status": "Login ",
+                "username": "username",
+                "password": "password"
+            },
+            "success":function (obj) {
+                console.log(obj);
+                if(obj.code === 0 && password == "7857"){
+                    alert("登录成功");
+                    location.href = "index.html";
+                }else if(obj.code === 2001){
+                    alert("用户名已存在")
+                }else{
+                    alert("登录失败")
+                }
+            }
+        })
     })
 </script>
 </html>
