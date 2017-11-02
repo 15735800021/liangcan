@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" style="width:100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" /> 
+    <title>购物车.良仓.生活美学平台</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        section{
+            min-height:500px;
+        }
+        #shopping{
+            width:1000px;
+            /* height:417px; */
+            margin:0 auto;
+        }
+        #shopping-1{
+            width:1000px;
+            height:92px;
+            color:#333;
+            font-size: 14px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        #shopping-1 div{display:inline-block;margin-top: 26px;}
+        #shopping-1 span{display: inline-block;width:135px;height:35px;}
+
+
+        #shopping-2{width:1000px;font-size: 15px;padding-top: 15px;}
+
+        #shopping-3{
+            width:1000px;
+            height:102px;
+        }
+        #shopping-3 span{display: inline;font-size: 20px;color:#197bc9;}
+        #shopping-3 .button{
+            display:inline-block;
+            width:168px;
+            height:30px;
+            color:#ffffff;
+            line-height: 30px;
+            vertical-align: middle;
+            text-align: center;
+            background: #7fa6c5;
+            margin-top: 5px;
+            border:none;
+        }
+
+        fieldset{
+            border:1px solid #ccc;
+            border-bottom: none;
+            border-left: none;
+            border-right: none;
+            font-size: 14px;
+            color:#404040;
+            width:60px;
+            padding:0 54px;
+            display:inline-block;
+            margin-top: 15px;
+        }
+        #shopping-3 fieldset a{
+            color:black;
+            text-decoration: none;
+        }
+        tr{
+            /* height:60px; */
+            width:1000px;
+            padding-top:10px;
+            padding-bottom:10px;
+            position:relative;
+            display:block;
+            border-bottom:1px solid black;
+        }
+        tr td a{
+            width:68px;
+            height:68px;
+            display:block;
+            background-size:100%;
+            margin-left:50px;
+            margin-top:-15px;
+        }
+        tr td input{
+            text-align:center;
+            width:30px;
+            border:none;
+        }
+        #shop1{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="area">
+           <ul>
+               <li><a href="login.html" class="white">登陆</a></li>
+               <li><a href="zhuce.html" class="white">注册</a></li>
+               <li style="width:67px;" class="shopping">
+                    <a href="gowuche.html">购物车</a>
+                    <div>你的购物车暂时没有商品...</div>
+                    <a href="" style="display:none;" class="k"><div>快去抢购良仓商品吧！</div></a>
+               </li>
+               <li style="width:55px;"  class="news">
+                   <a href="">消息</a>
+                   <ol>
+                        <li><p style="border:none;">动态<span>0</span></p></li>
+                        <li><p>评论<span>0</span></p></li>
+                        <li><p>私信<span>0</span></p></li>
+                        <li><p>粉丝<span>0</span></p></li>
+                        <li><p>喜欢<span>0</span></p></li>
+                        <li><p>通知<span>0</span></p></li>
+                   </ol>
+                </li>
+               <li><a href="">添加良品</a></li>
+           </ul>
+           <a href="shouye.html"><div class="logo"></div></a>    
+        </div>
+    </header>
+    <nav>
+        <div id="area">
+		   <div class="search">
+			   <a><div></div></a>
+			   <div class="search2">
+			        <input type="text" placeholder="search...">
+               </div>
+               <div class="hide"></div>
+		   </div>
+           <ul>
+        		<a href="shouye.html"><li>首页</li></a>
+                <a href="shop.html" id="n-store1" class="n">
+                    <li>商店</li>
+                    <div class="n-store animates" > 
+                        <ol id="area">
+                            <img src="images/goods0.jpg" class="n-first">
+                            <h6>新视线：2015年7月刊</h6>
+                          <li><img src="images/goods1.png"><p>家居</p></li>
+                          <li><img src="images/goods18.png"><p>家具</p></li>
+                          <li><img src="images/goods19.png"><p>文具</p></li>
+                          <li><img src="images/goods16.png"><p>数码</p></li>
+                          <li><img src="images/goods15.png"><p>玩乐</p></li>
+                          <li><img src="images/goods17.png"><p>厨卫</p></li>
+                          <li><img src="images/goods13.png"><p>美食</p></li>
+                          <li><img src="images/goods12.png"><p>男装</p></li>
+                          <li><img src="images/goods11.png"><p>女装</p></li>
+                          <li><img src="images/goods10.png"><p>童装</p></li>
+                          <li><img src="images/goods9.png"><p>鞋包</p></li>
+                          <li><img src="images/goods8.png"><p>配饰</p></li>
+                          <li><img src="images/goods14.png"><p>美护</p></li>
+                          <li><img src="images/goods7.png"><p>户外</p></li>
+                          <li><img src="images/goods5.png"><p>植物</p></li>
+                          <li><img src="images/goods3.png"><p>图书</p></li>
+                          <li><img src="images/goods6.png"><p>艺术</p></li>
+                          <li><img src="images/goods2.png"><p>礼物</p></li>
+                          <li><img src="images/goods4.png"><p>推荐</p></li>  
+                          <p>查看所有品牌><span>最新到货></span></p>
+                        </ol>     
+                    </div> 
+                </a>
+                <a href="share.html" id="journals" class="n">
+                    <li>杂志</li>
+                    <div class="journal animates">
+                      <ol id="area">
+                        <li>趣物</li>
+                        <li>数码</li>
+                        <li>汽车</li>
+                        <li>文化</li>
+                        <li>时尚</li>
+                        <li>美食</li>
+                        <li>建筑</li>
+                        <li>空间</li>
+                        <li>圈子</li>
+                        <li>清单</li>
+                        <li>活动</li>
+                        <li>视频</li>
+                      </ol>  
+                    </div>
+                </a>
+                <a href="share.html" id="share"  class="n">
+                    <li>分享</li>
+                    <div class="share1 animates">
+                      <ol id="area">
+                        <li>男士</li>
+                        <li>家居</li>
+                        <li>数码</li>
+                        <li>工具</li>
+                        <li>玩具</li>
+                        <li>美容</li>
+                        <li>孩子</li>
+                        <li>宠物</li>
+                        <li>饮食</li>
+                        <li>运动</li>
+                        <li>文化</li>
+                        <li>女士</li>
+                      </ol>  
+                    </div>
+                </a>
+                <a href="share.html"><li>达人</li></a>
+		   </ul> 
+        </div> 
+    </nav>
+    <section>
+        <div id="shopping">
+            <div id="shopping-1">
+                <div class="item">|<span class="txt" style="color:#6393b4">购物车</span>|</div>
+                <div class="item"><span class="txt">付款</span>|</div>
+                <div id="shopping-2">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <th width="100"><input type="checkbox"style="margin-left: 12px;">全选</th>
+                            <th width="300">良品</th>
+                            <th width="120">数量</th>
+                            <th width="160">单价（元）</th>
+                            <th width="160">小计（元）</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr id="shop1">
+                            <td width="100" margin-top="50px">
+                                <input type="checkbox"style="margin-left: -36px;">
+                                <a href="" class="a-p"></a>
+                            </td>
+                            <td width="270" class="a-name"></td>
+                            <td width="150" class="a-g"><input type="text" value="1"></td>
+                            <td width="140" class="a-cost"></td>
+                            <td width="140" class="a-price"></td>
+                            <td width="80" class="a-remove" style="cursor:pointer;">删除</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="shopping-3">
+                    <p>良品总价<font style="font-size: 18px;">/&nbsp;&nbsp;</font><span>¥<font id="moneys"></font></span></p>
+                    <p><input class="button" type="button" value="立即结算"></p>
+
+                    <fieldset>
+                        <legend>
+                            <a href="shop.html">继续购物</a>
+                        </legend>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="area">
+            <p><a href=""><i></i>良仓商店/OUR SHOP</a></p>
+            <ul>
+                <li><div style="background:url(images/1.png)0 -356px no-repeat"></div><span>全球精品<br><a>Global Selections</a></span></li>
+                <li><div style="background:url(images/1.png)-153px -219px no-repeat"></div><span>正品保证<br><a>Authenticity Guaranteed</a></span></li>
+                <li><div style="background:url(images/1.png)-55px -356px no-repeat"></div><span>全场包邮<br><a>Free Delivery</a></span></li>
+                <li><div style="background:url(images/1.png)-114px -356px no-repeat"></div><span>400-897-6336<br><a>工作日 09:00-18:00</a></span></li>
+            </ul>
+        </div>  
+    </footer> 
+    <div class="f-b">
+        <div id="area">
+            <div>iPhone Android<br>客户端下载
+                <div>
+                    <i class="ip"></i>
+                    <i class="ad"></i>下载iPhone版 &nbsp;&nbsp; 下载Android版
+                </div>
+            </div>
+            <ul>
+                <li class="wx">
+                    <div class="wx2"></div>
+                </li>
+                <li class="sh"></li>
+                <li class="do"></li>
+            </ul>
+            <ol>
+                <li style="padding-left:0;"><a href="">关于良仓</a></li>
+                <li><a href="">服务协议</a></li>
+                <li><a href="">隐私保护政策</a></li>
+                <li><a href="">使用指南</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">加入我们</a></li>
+                <li><a href="">友情链接</a></li>
+                <li style="border:none;"><a href="">私信良仓</a></li>
+            </ol><br>
+            <p>© 2013-2015 北京良仓文化传播有限公司版权所有 京ICP备13010677号-1 京公网安备11010502025627</p>
+            <p> 公司名称：北京良仓文化传播有限公司  电话：010-58263516</p>
+            <p>公司地址：北京朝阳区百子湾路32号6号楼1层60号.</p>
+            <p>社会信用统一代码：91110105059231575L  食品许可证：JY11105160159557  </p>
+            <p>图书证名称：中华人民共和国出版物经营许可证  图书证编号：新出发京零 字第 朝 150051 号  </p>
+        </div>
+    </div>
+    <aside>
+        <a href="#top"><div class="top"></div></a>
+        <a href=""><div class="service">联系客服</div></a>
+    </aside>
+    <script src="jq/jquery-3.2.1.js"></script>
+    <script src="js/shouye.js"></script>
+    <script src="js/gowuche.js"></script>
+    <script src="js/sosuo.js"></script>
+</body>
+</html>
