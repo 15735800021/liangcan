@@ -68,10 +68,10 @@ $("#leftBtn").click(function() {
     });	
     
 });
-$('#carousel').hover(function() {
-    clearInterval(move);
+$('#carousel').mouseover(function() {
+    clearInterval(timer);
 });
-setInterval(move, 3000);
+timer=setInterval(move, 3000);
 var i = 0;
   function move() {
 	if ($("#m_unit").is(":animated")) {
@@ -126,3 +126,18 @@ $.ajax({
         })
     }
 })
+var a = $.cookie("username");
+var b = $.cookie("avator");
+console.log(a);
+if(a!=undefined){
+    $(".white1").replaceWith();
+    $(".white2").replaceWith("<a>"+a+"</a>");
+}
+$(".car").click(function(){
+    if(a==undefined){
+        location.href = "login.html";
+    }else{
+        location.href = "gowuche.html";
+    }
+})
+

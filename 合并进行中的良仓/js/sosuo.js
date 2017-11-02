@@ -1,6 +1,6 @@
 $(".search a div").click(
     function(){
-        if($(".search2").css("left") == 0 + "px"){
+        if($(".search2").css("left") == 0 + "px" && $(".search2 input").val()!=""){
             $(".animates").stop(true,true);
             var name = $(".search2 input").val();
             console.log(name);

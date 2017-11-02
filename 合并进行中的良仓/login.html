@@ -120,6 +120,8 @@
         </div>
     </div>
 </body>
+<script src="jq/jquery-3.2.1.js"></script>
+<script src="jq/jquery.cookie.js"></script>
 <script>
     var url="http://h6.duchengjiu.top/shop/api_user.php";
     var username = $("#mobile").val();
@@ -130,9 +132,7 @@
         password: password
     };
     $.post(url, data, function(obj) {
-    	   console.log(obj.data)
         if(obj.code === 0){
-         
         }else if(obj.code === 2001){
            alart("用户名已存在");
         }
@@ -154,7 +154,10 @@
 		        password: password
             },
             "success":function (obj) {
-                console.log(obj);
+                //保存的用户名密码cookie
+                $.cookie("username",obj.data.username);
+                $.cookie("avator",obj.data.avator);
+                
                 if(obj.code === 0){
                     alert("登录成功");
                     location.href = "shouye.html";
@@ -166,5 +169,6 @@
             }
         })
     })
+    
 </script>
 </html>
