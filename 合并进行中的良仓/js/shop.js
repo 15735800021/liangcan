@@ -40,7 +40,7 @@ $.ajax({
         }
         $("#bott li").each(function(i){
             $(this).click(function(){
-                window.open("lc-xiangqing.html?"+a[i].goods_id);
+                window.open("lc-xiangqing.html?"+a[i].goods_id+"?"+a[i].cat_id);
             })
         }) 
         $("#bott li").each(function(i){
@@ -82,7 +82,7 @@ $.ajax({
         }
         $("#bott li").each(function(i){
             $(this).click(function(){
-                window.open("lc-xiangqing.html?"+a[i].goods_id);
+                window.open("lc-xiangqing.html?"+a[i].goods_id+"?"+a[i].cat_id);
             })
         }) 
         $("#bott li").each(function(i){

@@ -1,8 +1,8 @@
 var r = window.location.search.substr(1); 
-console.log(r);
+r=parseInt(r);
 var url = "http://h6.duchengjiu.top/shop/api_goods.php";
 var data = {
-    "cat_id":"0",
+    "goods_id":r,
 }
 var a=[];
 $.ajax({
