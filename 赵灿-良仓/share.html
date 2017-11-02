@@ -5,81 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        section{
-            height:1000px;
-        }
-        #shopping{
-            width:1000px;
-            /* height:417px; */
-            margin:0 auto;
-        }
-        #shopping-1{
-            width:1000px;
-            height:92px;
-            color:#333;
-            font-size: 14px;
-            text-align: center;
-            vertical-align: middle;
-        }
-        #shopping-1 div{display:inline-block;margin-top: 26px;}
-        #shopping-1 span{display: inline-block;width:135px;height:35px;}
-
-
-        #shopping-2{width:1000px;border-bottom: 2px solid gray;font-size: 15px;padding-top: 15px;}
-
-        #shopping-3{
-            width:1000px;
-            height:102px;
-        }
-        #shopping-3 span{display: inline;font-size: 20px;color:#197bc9;}
-        #shopping-3 .button{
-            display:inline-block;
-            width:168px;
-            height:30px;
-            color:#ffffff;
-            line-height: 30px;
-            vertical-align: middle;
-            text-align: center;
-            background: #7fa6c5;
-            margin-top: 5px;
-            border:none;
-        }
-
-        fieldset{
-            border:1px solid #ccc;
-            border-bottom: none;
-            border-left: none;
-            border-right: none;
-            font-size: 14px;
-            color:#404040;
-            width:60px;
-            padding:0 54px;
-            display:inline-block;
-            margin-top: 15px;
-        }
-        #shopping-3 fieldset a{
-            color:black;
-            text-decoration: none;
-        }
-        tr{
-            /* height:60px; */
-            width:1000px;
-            padding-top:100px;
-            position:relative;
-            display:block;
-            border-bottom:1px solid black;
-        }
-        tr td a{
-            width:68px;
-            height:68px;
-            background:red;
-            display:block;
-            margin-left:62px;
-            margin-top:-15px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enjoy.css" />
 </head>
 <body>
     <header>
@@ -190,49 +117,54 @@
 		   </ul> 
         </div> 
     </nav>
-    <section>
-        <div id="shopping">
-            <div id="shopping-1">
-                <div class="item">|<span class="txt" style="color:#6393b4">购物车</span>|</div>
-                <div class="item"><span class="txt">付款</span>|</div>
-                <div id="shopping-2">
-                    <table>
-                        <tbody>
-                        <tr>
-                            <th width="100"><input type="checkbox"style="margin-left: 12px;">全选</th>
-                            <th width="300">良品</th>
-                            <th width="120">数量</th>
-                            <th width="160">单价（元）</th>
-                            <th width="160">小计（元）</th>
-                            <th>操作</th>
-                        </tr>
-                        <tr>
-                            <td width="100" margin-top="50px">
-                                <input type="checkbox"style="margin-left: -20px;">
-                                <a href=""></a>
-                            </td>
-                            <td width="300">2</td>
-                            <td width="120">3</td>
-                            <td width="160">4</td>
-                            <td width="160">5</td>
-                            <td>删除</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div id="shopping-3">
-                    <p>良品总价<font style="font-size: 18px;">/&nbsp;&nbsp;</font><span>¥<font>0.00</font></span></p>
-                    <p><input class="button" type="button" value="立即结算"></p>
-
-                    <fieldset>
-                        <legend>
-                            <a href="#">继续购物</a>
-                        </legend>
-                    </fieldset>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div id="section">
+    	<div class="nav">
+    		<p>
+				<a href=""  class="p"> 良仓 </a>
+				<span>></span> 
+				<a href=""  class="p">全部精品</a> 
+				<span>></span> 
+				<a href="">分享</a>
+			</p>
+    	</div>
+			
+			<div id="user">
+				<a href="" class="userimg"><img src="img/893851309.jpg" /></a>
+				<div class="left" style="float:left">				
+					<span class="address">滇仓网DC</span>
+					<span class="like">35</span>
+				</div>
+				<a href="" class="userimg"><img src="img/597.jpg"  style="margin-left: 40px"/></a>
+				<div class="middle">				
+					<span class="address">BINANA</span>
+					<span class="like">59</span>
+				</div>
+				<a href="" class="userimg"><img src="img/1000035636.jpg" style="margin-left: 40px" /></a>
+				<div class="right">				
+					<span class="address">Jackson Aw</span>
+					<span class="like">951</span>
+				</div>
+			</div>
+			
+			<div id="list">
+				<ul>
+					<li>										
+					    <img src="img/252297.jpg"  />
+					    <div class="hover">
+					    	<div class="top">
+					    		<p>￥<span class="money"></span></p>
+					    		<img src="img/icon_send.png"  />
+					    	</div>
+					    	<div class="bottom">
+					    		<p>dd</p>
+					    	</div>
+					    </div>
+					</li>
+				</ul>
+				
+			</div>
+			
+</div>
     <footer>
         <div id="area">
             <p><a href=""><i></i>良仓商店/OUR SHOP</a></p>
@@ -280,8 +212,7 @@
         <a href="#top"><div class="top"></div></a>
         <a href=""><div class="service">联系客服</div></a>
     </aside>
-    <script src="jq/jquery-3.2.1.js"></script>
-    <script src="shouye.js"></script>
-    <script src="js/gowuche.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/shouye.js"></script>
 </body>
 </html>

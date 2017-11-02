@@ -1,0 +1,126 @@
+#section{
+	width: 1000px;
+	margin: auto;
+	position: relative;
+}
+#section .nav p{
+	    font-size: 12px;
+		height: 20px;
+		margin: 10px 0px
+}
+#section p a{
+
+    color: rgb(191, 191, 191)
+}
+
+#section .p{
+	color:#999;
+}  
+#section p span{
+	color: rgb(191, 191, 191)
+} 
+#user{
+	width: 1000px;
+	height: 40px;
+}
+.userimg{
+	width: 34px;
+    height: 34px;
+    padding: 0px;
+    margin-top:2px;
+    float: left;
+}
+.left{
+	width: 270px;
+    height: 34px;  
+    color: #333333;
+    background: url(../img/block_bg_gray_266.png) no-repeat;
+}
+.middle{
+	width: 270px;
+    height: 34px;  
+    color: #333333;
+    background: url(../img/block_bg_gray_266.png) no-repeat;
+    float: left;
+    margin-left: 40px
+}
+.right{
+	width: 270px;
+    height: 34px;  
+    color: #333333;
+    background: url(../img/block_bg_gray_266.png) no-repeat;
+    float: left;
+    margin-left: 40px
+}
+.address{
+	padding-left: 5px;
+	font-size: 12px;
+	color: #878787;
+	line-height: 34px;
+	text-align: left;
+}
+.like{
+	display: inline-block;
+    background: url(../img/xin_black.png) 56px 10px no-repeat;
+    overflow: hidden;
+    width: 45px;
+    height: 26px;
+    padding: 8px 32px 0px 8px;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+#section #list{
+	width: 1000px;
+	position: relative;
+}
+#list ul li{
+	width: 306px;
+	float: left;
+	margin-right: 40px
+}
+#list .hover{
+	position: absolute;
+	top: 0px;
+	width: 306px;
+	display: none;
+	
+}
+#list .top{
+	position: relative;
+	/*margin-top: -10px;*/
+	height: 36px;
+	background:rgba(0, 0, 0, 0.45) 
+}
+#list .top img{
+	float:right;
+	position: absolute;
+    left: 280px;
+    top: 10px;
+}
+#list .top p{
+	color: #fff;
+	font-size: 18px;
+	text-align: left;
+    line-height: 36px;
+        
+}
+#list .bottom{
+	position: relative;
+	height: 270px;
+	/*margin-top: -10px;*/
+	background:rgba(0, 0, 0, 0.25);
+	
+}
+#list .bottom p{
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+    line-height: 270px;
+}
+#list li:hover .hover{
+	
+		display: block
+	
+}

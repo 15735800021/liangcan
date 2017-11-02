@@ -93,6 +93,7 @@
         font-size: 15px;}
     </style>
     <script src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js" ></script>
 </head>
 <body>
     <div id="box">
@@ -157,7 +158,10 @@
                 console.log(obj);
                 if(obj.code === 0){
                     alert("登录成功");
-                    location.href = "良仓-首页.html";
+                    console.log(obj)
+                    location.href = "lc-xiangqing.html";
+                    //用cookie保存
+                    $.cookie("token", obj.data.token)
                 }else if(obj.code === 2001){
                     alert("用户名已存在")
                 }else{

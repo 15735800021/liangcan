@@ -1,0 +1,57 @@
+#container{
+	width: 1000px;
+	margin: auto;
+	margin-top: 5px;
+}
+#container .car{
+	width: 1000px;
+	line-height: 30px;
+	text-align: center;
+	margin: 20px 0;
+}
+#container .car span{
+	margin: 0 50px;
+}
+#container .shouhuo{
+	color: #333;
+	font-size: 15px;
+	border-bottom: 1px solid #999;
+	padding-bottom: 5px;
+} 
+#container #address{
+	width: 230px;
+	height: 180px;
+	border: 2px solid #7fa6c5;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+#container #tianjia{
+	margin-bottom: 40px;
+}
+#container #tianjia input{
+	margin-top: 3px;
+	margin-right: 5px;
+	font-size: 14px;
+	float: left;
+}
+#container #tianjia span{
+	color: #999999;
+}
+#container #xiangxi .inpt{
+	height: 24px;
+    width: 160px; 
+    border: 2px #dedede solid;
+    padding: 0px 5px;
+    margin-left: 10px;
+}
+#container #xiangxi span{
+	color: #999999;
+}
+/*三级联动*/
+.info{
+	position: relative;
+	
+}
+.info select{ border:2px #dedede solid; background:#FFFFFF;}
+
+.info #show{ color:#3399FF; }

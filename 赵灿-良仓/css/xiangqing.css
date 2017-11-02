@@ -2,7 +2,7 @@
 	width: 1000px;
 	height: auto;
 	margin: auto;
-	padding-top:120px;
+	margin-top:20px
 }
 #container .nav{
 	width: 1000px;
@@ -23,8 +23,7 @@
 	border: 1px solid #000;
 	float: left;
 	margin-right: 40px;
-	margin-top:10px;
-	background-size:100%;
+	margin-top:10px
 }
 #container .left .xinxi .like{
 	display: inline-block;
@@ -260,7 +259,6 @@
 	margin-bottom: 25px;	
 }
 #container .right .glad>img{
-	margin-top:10px;
 	width: 200px;
 }
 #container .right .likes{
