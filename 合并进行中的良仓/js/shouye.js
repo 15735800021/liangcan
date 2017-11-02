@@ -102,7 +102,6 @@ $.ajax({
     success:function(str){
         var a=str.data;
         for(var i=0;i<a.length-1;i++){
-            // console.log(str);
         $(".shoppings ul").append("<li></li>");
         $(".shoppings ul li").eq(i).css("background-image","url("+a[i].goods_thumb+")");
         if(i%3==0){

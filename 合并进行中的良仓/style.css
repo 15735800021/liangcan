@@ -23,6 +23,11 @@ header{
     width:1000px;
     margin:0 auto;
 }
+header>#area>a{
+    display:block;
+    width:95px;
+    height:38px;
+}
 #area .logo{
     width:95px;
     height:38px;

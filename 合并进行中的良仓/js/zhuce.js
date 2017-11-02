@@ -136,7 +136,7 @@ $(function  () {
 			    console.log(obj);
 			    if(obj.code === 0){
 			        alert("注册成功");
-			        location.href = "良仓-首页.html";
+			        location.href = "shouye.html";
 			    }else if(obj.code === 2001){
 			        alert("用户名已存在")
 			    }else{

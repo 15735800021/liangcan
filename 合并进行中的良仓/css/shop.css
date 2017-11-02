@@ -1,0 +1,85 @@
+﻿
+	section{
+				width:100%;
+				height:1900px;
+			}
+			#main{
+				width: 1000px;
+				height: 47px;
+				margin: 0 auto;
+				margin-top: 45px;
+			}
+		
+			#mainl {
+				width: 188px;
+				height: 40px;
+				background: url("../images/1.png") -0px  -740px;
+			}
+			#mainl p{
+				width:200px;
+				height:55px;
+				background: url("../images/1.png") -10px  -524px;
+				margin-left: 400px;
+			}
+			#bott>li{
+				width:316px;
+				height:316px;
+				float:left;
+				margin-top:40px;
+				margin-left:26px;
+				background-size:100%;
+				cursor:pointer;
+			}
+			.shop-class>li{
+				float:left;
+				width:200px;
+				margin-top:30px;
+				border-bottom:1px solid #ccc;
+				text-align:center;
+				line-height:40px;
+				cursor:pointer;
+			}
+			.shop-class>li:hover{
+				border-color:black;
+			}
+			#bott li div{
+				width:316px;
+				height:316px;
+				position:relative;
+				background:url("../images/shadow_blk1.png");
+				display:none;
+				text-align:center;
+				line-height:316px;
+				color:white;
+				white-space: nowrap;
+				overflow:hidden;
+			}
+			#bott li:hover div{
+				display:block;
+			}
+			#bott li div i{
+				color:skyblue;
+				font-size:30px;
+				top:-120px;
+				left:20px;
+				position:absolute;
+			}
+			#bott li div h3{
+				position:relative;
+				width:200px;
+				left:50%;
+				margin-left:-100px;
+				text-align:center;
+				overflow:hidden;
+				text-overflow:ellipsis;
+			}
+			#bott li div p{
+				font-size:14px;
+				width:300px;
+				left:50%;
+				position:absolute;
+				margin-left:-150px;
+				font-weight:200;
+				margin-top:-280px;
+				word-break:break-all; 
+			}
